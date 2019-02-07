@@ -1,0 +1,29 @@
+﻿<Page
+    x:Class="iDGraphic.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:iDGraphic"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:canvas="using:Microsoft.Graphics.Canvas.UI.Xaml"
+    mc:Ignorable="d" Width="Auto">
+
+    <Grid Background="#FF181818">
+        <Border BorderBrush="#FF3C3C3C" BorderThickness="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,50,0,50">
+            <canvas:CanvasControl x:Name="canvas" ClearColor="#FF202020" Width="930" Height="550" Draw="canvas_Draw" PointerMoved="canvas_PointerMoved"/>
+        </Border>
+
+        <Button x:Name="btnGenerate" Content="GERAR" HorizontalAlignment="Left" Margin="1037,574,0,0" VerticalAlignment="Top" Width="150" FontFamily="Nirmala UI" Background="#FF007ACC" BorderThickness="0" Foreground="#FFE6E6E6" Click="btnGenerate_Click"/>
+        <TextBox x:Name="tBox_H" HorizontalAlignment="Left" Margin="1037,75,0,0" TextWrapping="Wrap" Text="12" VerticalAlignment="Top" Background="#FF282828" BorderBrush="#FF3C3C3C" Width="150"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="1037,50,0,0" TextWrapping="Wrap" Text="TOTAL HORIZONTAL" VerticalAlignment="Top"/>
+        <TextBox x:Name="tBox_V" HorizontalAlignment="Left" Margin="1037,152,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Background="#FF282828" BorderBrush="#FF3C3C3C" Width="150"/>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="1037,127,0,0" TextWrapping="Wrap" Text="TOTAL VERTICAL" VerticalAlignment="Top"/>
+        <TextBox x:Name="tBox_I" HorizontalAlignment="Left" Margin="1037,227,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="#FF282828" BorderBrush="#FF3C3C3C" Width="150"/>
+        <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="1037,202,0,0" TextWrapping="Wrap" Text="TOTAL MESES" VerticalAlignment="Top"/>
+        <TextBox x:Name="tBox_Vmax" HorizontalAlignment="Left" Margin="1037,302,0,0" TextWrapping="Wrap" Text="120000" VerticalAlignment="Top" Background="#FF282828" BorderBrush="#FF3C3C3C" Width="150"/>
+        <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Left" Margin="1037,277,0,0" TextWrapping="Wrap" Text="VALOR MÁXIMO" VerticalAlignment="Top"/>
+        <TextBox x:Name="tBox_Vm" HorizontalAlignment="Left" Margin="1037,378,0,0" TextWrapping="Wrap" Text="120000" VerticalAlignment="Top" Background="#FF282828" BorderBrush="#FF3C3C3C" Width="150"/>
+        <TextBlock x:Name="textBlock_Copy3" HorizontalAlignment="Left" Margin="1037,353,0,0" TextWrapping="Wrap" Text="VALOR MENSAL" VerticalAlignment="Top"/>
+        <Button x:Name="btnAdd" Content="ADICIONAR" HorizontalAlignment="Left" Margin="1037,415,0,0" VerticalAlignment="Top" Width="150" FontFamily="Nirmala UI" Background="#FF007ACC" BorderThickness="0" Foreground="#FFE6E6E6" Click="btnAdd_Click"/>
+    </Grid>
+</Page>
